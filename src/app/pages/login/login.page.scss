@@ -1,0 +1,40 @@
+.logo {
+	padding: 18px 15vw 0 15vw;
+	text-align: center;
+
+	img {
+		max-height: 30vh;
+	}
+}
+
+.form-container {
+	position: relative;
+	z-index: 99999;
+}
+
+.login-btn {
+	width: 100%;
+	margin-top: 32px;
+}
+
+.hidden {
+	display: none;
+}
+
+form ion-item:not(:last-child) {
+	margin-bottom: 10px;
+	--padding-start: 0;
+
+	ion-input {
+		--padding-start: 10px;
+	}
+}
+
+@media (min-height: 540px) {
+	.login-btn {
+		margin-top: 0;
+		position: fixed;
+		bottom: 5vw;
+		padding-right: 32px;
+	}
+}
