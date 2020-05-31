@@ -9,4 +9,30 @@
 </ion-header>
 
 <ion-content>
+	<ion-searchbar placeholder="Filtrar serviços" debounce="500" (ionChange)="search($event.target.value)"></ion-searchbar>
+
+	<ion-card>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col size="4" *ngFor="let servico of servicos">
+						<ion-card>
+							<div>
+								<img [src]="servico.img"/>
+								<ion-card-header>
+									<ion-card-title class="truncate">{{ servico.nome }}</ion-card-title>
+								</ion-card-header>
+							</div>
+						</ion-card>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+		<ion-fab-button>
+			<ion-icon name="add"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
 </ion-content>

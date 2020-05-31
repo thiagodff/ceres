@@ -9,4 +9,44 @@
 </ion-header>
 
 <ion-content>
+	<ion-card id="info">
+		<ion-card-header>
+			<ion-card-title>Informações</ion-card-title>
+		</ion-card-header>
+
+		<ion-card-content>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card id="market">
+		<ion-card-header>
+			<ion-card-title>Mercado</ion-card-title>
+		</ion-card-header>
+
+		<ion-card-content>
+			<ion-text class="label">Alimentos</ion-text>
+			<div class="scroll">
+				<ion-card *ngFor="let alimento of alimentos">
+					<div>
+						<img [src]="alimento.img"/>
+						<ion-card-header>
+							<ion-card-title>{{ alimento.nome }}</ion-card-title>
+						</ion-card-header>
+					</div>
+				</ion-card>
+			</div>
+
+			<ion-text class="label">Serviços</ion-text>
+			<div class="scroll">
+				<ion-card *ngFor="let servico of servicos">
+					<div>
+						<img [src]="servico.img"/>
+						<ion-card-header>
+							<ion-card-title class="truncate">{{ servico.nome }}</ion-card-title>
+						</ion-card-header>
+					</div>
+				</ion-card>
+			</div>
+		</ion-card-content>
+	</ion-card>
 </ion-content>

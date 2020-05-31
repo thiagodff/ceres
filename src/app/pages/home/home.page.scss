@@ -1,0 +1,80 @@
+ion-card ion-card-header ion-card-title, ion-card ion-card-content {
+	--color: white;
+	color: white;
+}
+
+ion-content > ion-card ion-card-header ion-card-title {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+ion-content > ion-card > ion-card-header {
+	padding: 10px;
+}
+
+#info {
+	--background: #BF5B43;
+
+	ion-card-header {
+		--background: #9E4643;
+	}
+}
+
+#market {
+	--background: #E79B27;
+
+	> ion-card-header {
+		--background: #F8BA29;
+	}
+
+	ion-card-content {
+		padding-top: 10px;
+
+		ion-text.label {
+			padding-top: 10px;
+			font-size: large;
+			text-transform: uppercase;
+		}
+
+		.scroll {
+			margin-top: 5px;
+
+			ion-card {
+				margin: 0;
+				width: 32%;
+				padding-top: 32%;
+				display: inline-block;
+				color: white;
+				--background: #BF4343 !important;
+				--background-hover: #AF3333 !important;
+				--background-activated: #9F2323 !important;
+
+				div {
+					position: absolute;
+					top: 5px;
+					right: 5px;
+					bottom: 5px;
+					left: 5px;
+					text-align: center;
+
+					img {
+						height: 72%;
+					}
+
+					ion-card-header {
+						padding: 0;
+
+						ion-card-title {
+							font-size: small;
+							text-transform: unset;
+						}
+					}
+				}
+			}
+
+			ion-card:not(:last-child) {
+				margin-right: 2%;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+ion-card {
+	margin-top: 0;
+	min-height: 80%;
+	--background: #E79B27;
+
+	ion-card-content {
+		padding: 10px;
+	}
+}
+
+ion-card ion-card-header ion-card-title, ion-card ion-card-content {
+	--color: white;
+	color: white;
+}
+
+ion-col ion-card {
+	margin: 0;
+	width: 100%;
+	padding-top: 100%;
+	display: inline-block;
+	color: white;
+	--background: #BF4343 !important;
+	--background-hover: #AF3333 !important;
+	--background-activated: #9F2323 !important;
+
+	div {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		bottom: 5px;
+		left: 5px;
+		text-align: center;
+
+		img {
+			height: 72%;
+		}
+
+		ion-card-header {
+			padding: 0;
+
+			ion-card-title {
+				font-size: small;
+				text-transform: unset;
+			}
+		}
+	}
+}

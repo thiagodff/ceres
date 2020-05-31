@@ -34,7 +34,7 @@ ion-toolbar {
 	--background: #DAC098 !important;
 }
 
-ion-button:not(.button-clear) {
+ion-button:not(.button-clear), ion-fab-button {
 	--background: #BF4343 !important;
 	--background-hover: #AF3333 !important;
 	--background-activated: #9F2323 !important;
@@ -71,4 +71,12 @@ ion-router-outlet ion-content {
 
 ion-menu ion-content {
 	--ion-background-color: #CE8062 !important;
+}
+
+ion-img {
+	object-fit: contain;
+}
+
+ion-searchbar {
+	--background: white !important;
 }
