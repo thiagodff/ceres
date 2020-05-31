@@ -17,5 +17,9 @@ export class PlantingPage implements OnInit {
 			this.navCtrl.navigateRoot(["/login"]);
 	}
 
+	tutorial() {
+		this.navCtrl.navigateRoot(["tutorial"]);
+	}
+
 	ngOnInit () { }
 }
