@@ -19,6 +19,11 @@ export class AppComponent implements OnInit {
 		url: "/home",
 		icon: "home",
 		direction: "root"
+	}, {
+		title: "Como Plantar?",
+		url: "/planting",
+		icon: "leaf",
+		direction: "forward"
 	}];
 
 	public informacoes: string[] = ["Dado 1", "Dado 2", "Dado 3", "Dado 4"];
@@ -70,6 +75,11 @@ export class AppComponent implements OnInit {
 			queryParams: { info }
 		});
 
+		this.menu.close();
+	}
+
+	openMyProductsAndServices (isProduct: boolean) {
+		this.navCtrl.navigateForward([isProduct ? "my-products" : "my-services"]);
 		this.menu.close();
 	}
 

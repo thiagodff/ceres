@@ -13,8 +13,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomePageModule } from './pages/home/home.module';
 import { LoginPageModule } from './pages/login/login.module';
+import { MyProductsPageModule } from './pages/my-products/my-products.module';
 import { InputErrorModule } from './shared-components/input-error/input-error.module';
 import { RequestInterceptorService } from './services/authentication/request.interceptor.service';
+import { PlantingPageModule } from './pages/planting/planting.module';
+import { TutorialPageModule } from './pages/tutorial/tutorial.module';
+import { MarketPageModule } from './pages/market/market.module';
+import { MyServicesPageModule } from './pages/my-services/my-services.module';
 
 @NgModule({
 	declarations: [AppComponent],
@@ -29,7 +34,12 @@ import { RequestInterceptorService } from './services/authentication/request.int
 		ReactiveFormsModule,
 		HomePageModule,
 		LoginPageModule,
-		InputErrorModule
+		InputErrorModule,
+		MyProductsPageModule,
+		MyServicesPageModule,
+		PlantingPageModule,
+		TutorialPageModule,
+		MarketPageModule
 	],
 	providers: [
 		StatusBar,
