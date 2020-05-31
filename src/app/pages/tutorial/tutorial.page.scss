@@ -4,23 +4,26 @@ ion-content {
 	align-items: center;
 }
 
-ion-content div {
-	background-color: white;
-	border-radius: 8px;
-	margin: 30px;
+ion-content ion-card {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 15px;
-}
+	background-color: white;
 
-ion-content div strong {
-	line-height: 0;
-	margin: 15px 0 15px 0;
-	font-size: 18px;
-}
+	ion-img {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		height: 150px;
+	}
 
-ion-content div p {
-	font-size: 14px;
-	margin: 15px 0 15px 0;
+	ion-text {
+		font-size: 14px;
+		margin: 15px 0;
+
+		strong {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+	}
 }

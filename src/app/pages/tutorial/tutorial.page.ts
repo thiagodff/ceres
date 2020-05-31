@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 
+import { IPlanta } from 'src/app/models/IPlanta';
 import { UserService } from 'src/app/services/user/user.service';
 
 @Component({
@@ -10,17 +11,17 @@ import { UserService } from 'src/app/services/user/user.service';
 	styleUrls: ['./tutorial.page.scss'],
 })
 export class TutorialPage implements OnInit {
-	public title: string;
+	public planta: IPlanta;
 
 	constructor (
-		private activatedRoute: ActivatedRoute,
+		private router: Router,
 		private navCtrl: NavController,
 		private user: UserService
 	) {
 		if (!this.user.isLogged())
 			this.navCtrl.navigateRoot(["/login"]);
 
-		this.title = this.activatedRoute.snapshot.queryParams["title"];
+		this.planta = this.router.getCurrentNavigation().extras.state as IPlanta;
 	}
 
 	ngOnInit () { }

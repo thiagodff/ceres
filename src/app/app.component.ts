@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
 		icon: "home",
 		direction: "root"
 	}, {
-		title: "Como Plantar?",
+		title: "Como Plantar",
 		url: "/planting",
 		icon: "leaf",
 		direction: "forward"
