@@ -1,0 +1,39 @@
+ion-title {
+	font-weight: 700;
+}
+
+ion-content {
+	display: flex;
+	--padding-top: 15px;
+}
+
+ion-buttons.item {
+	background: white;
+	margin: 15px 15px 0 15px;
+	padding: 15px;
+	border-radius: 8px;
+}
+
+ion-buttons.item img {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
+
+ion-buttons.item div.item-description {
+	margin-left: 10px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+ion-buttons.item div strong {
+	font-size: 18px;
+	line-height: 0;
+}
+
+ion-buttons.item div p {
+	font-size: 14px;
+}
+
